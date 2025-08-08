@@ -1,0 +1,29 @@
+.header {
+    background-color: #0c2e7a;
+    text-align: center;
+    color: white;
+}
+
+.space {
+    padding: 0.5%;
+}
+
+.scroll  {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.carousel {
+    background-color: #0c2e7a;
+    padding: 3%;
+}
+
+.card-body {
+    text-align: center;
+    height:100%;
+}
+
+.top-margin {
+    margin-top: 5%;
+}

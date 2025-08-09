@@ -45,7 +45,7 @@
     </div>
     <div class="row header scroll">
         <div class="col-xs-12 col-md-12 space">
-            <h2>Next General Meeting on Date | Time | Room#</h2>
+            <h2>Next General Meeting on August 19th | 6pm-7pm | LEEP 2300</h2>
             <br>
         </div>
     </div>
@@ -143,7 +143,7 @@
       <div class="col-xs-12 col-md-12">
         <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; overflow: hidden;
- border-radius: 8px; will-change: transform;">
+ will-change: transform;">
   <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
     src="https://www.canva.com/design/DAGqcxSEd_o/Cz-BiEkS6My-psDnAY3DKA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
@@ -154,7 +154,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 12, 2025 13:00:00").getTime();
+var countDownDate = new Date("Aug 19, 2025 18:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -185,6 +185,10 @@ var x = setInterval(function() {
   if (minutes < 0 && minutes > -60) {
     clearInterval(x);
     document.getElementById("end").innerHTML = "RIGHT NOW!!!";
+  }
+  else if (minutes > -60) {
+    clearInterval(x);
+    document.getElementById("end").innerHTML = "Thanks for coming! Next announcement will be posted soon!"
   }
 }, 1000);
 </script>

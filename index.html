@@ -186,7 +186,7 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("end").innerHTML = "RIGHT NOW!!!";
   }
-  else if (minutes > -60) {
+  else if (minutes < -60) {
     clearInterval(x);
     document.getElementById("end").innerHTML = "Thanks for coming! Next announcement will be posted soon!"
   }

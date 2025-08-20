@@ -50,7 +50,7 @@
     </div>
     <div class="row header scroll">
         <div class="col-xs-12 col-md-12 space">
-            <h2>Next General Meeting on August 19th | 6pm-7pm | LEEP 2300</h2>
+            <h2>Next General Meeting on August 26th | 6pm-7pm | LEEP 2300</h2>
             <br>
         </div>
     </div>
@@ -191,7 +191,7 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("end").innerHTML = "RIGHT NOW!!!";
   }
-  else if (minutes < -60) {
+  else if (minutes <= -60) {
     clearInterval(x);
     document.getElementById("end").innerHTML = "Next meeting announcement will be posted soon!"
   }

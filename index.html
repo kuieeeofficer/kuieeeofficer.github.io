@@ -177,23 +177,24 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("daystxt").innerHTML = "days";
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("hourstxt").innerHTML = "hours";
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("minutestxt").innerHTML = "minutes";
-  document.getElementById("seconds").innerHTML = seconds;
-  document.getElementById("secondstxt").innerHTML = "seconds";
-
-  // If the count down is finished, write some text
-  if (minutes < 0 && minutes > -60) {
+  if (minutes < 0 && minutes > -60 && hours == 0) {
     clearInterval(x);
     document.getElementById("end").innerHTML = "RIGHT NOW!!!";
   }
-  else if (minutes <= -60) {
+  else if (hours < 0) {
     clearInterval(x);
-    document.getElementById("end").innerHTML = "Next meeting announcement will be posted soon!"
+    document.getElementById("end").innerHTML = "Thanks for coming! Next meeting announcement will be posted soon!";
+  }
+  else {
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("daystxt").innerHTML = "days";
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("hourstxt").innerHTML = "hours";
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("minutestxt").innerHTML = "minutes";
+    document.getElementById("seconds").innerHTML = seconds;
+    document.getElementById("secondstxt").innerHTML = "seconds";
+
   }
 }, 1000);
 </script>

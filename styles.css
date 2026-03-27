@@ -20,11 +20,6 @@ body {
     z-index: 999;
 }
 
-.navbar {
-  position: relative;
-  z-index: 2000;
-}
-
 .carousel {
     background-color: #0c2e7a;
     padding: 3%;

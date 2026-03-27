@@ -88,3 +88,8 @@ body {
   margin: 0 auto;  
   padding: 20px;
 }
+
+.link {
+  pointer-events: none;
+  color: white;
+}

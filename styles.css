@@ -90,6 +90,13 @@ body {
 }
 
 .link {
-  pointer-events: none;
   color: white;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: white;
+  text-decoration: none;
 }
